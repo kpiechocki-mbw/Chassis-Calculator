@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Boxes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      font-family: Arial;
+      padding: 40px;
+      background: #f4f4f4;
+      text-align: center;
+    }
+
+    .box {
+      display: inline-block;
+      width: 200px;
+      height: 120px;
+      margin: 20px;
+      line-height: 120px;
+      font-size: 20px;
+      font-weight: bold;
+      background: white;
+      border: 2px solid black;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+
+    .box:hover {
+      background: #e5e5e5;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box" onclick="selectBox(1)">Find ideal CA or WB given Body Length</div>
+  <div class="box" onclick="selectBox(2)">Find Body Length given CA or WB</div>
+
+  <script>
+    function selectBox(number) {
+      alert("You clicked Box " + number);
+    }
+  </script>
+
+</body>
+</html>
